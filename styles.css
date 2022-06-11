@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+main,
+.formItens {
+  display: flex;
+  display: block;
+  justify-content: center;
+}
+
+fieldset {
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin: 10px;
+  align-items: center;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 0.5em 1.7em;
+  margin: 0 0.1em 0.1em 0;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  background-color: #444343;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.buttons:hover {
+  border-color: rgb(255, 255, 255);
+}
