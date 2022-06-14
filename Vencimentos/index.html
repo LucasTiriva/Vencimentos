@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+  <title>CDV</title>
+</head>
+
+<body>
+  <main>
+    <div>
+      
+        <fieldset>
+          <legend>
+            <h1>CONTROLE DE VENCIMENTOS</h1>
+          </legend>
+          <label class="formItens" for="itemName">Nome do item:</label>
+          <input type="text" id="itemName" name="itemName" placeholder="Nome do item" required />
+
+          <label class="formItens" for="itemCode">Código do item</label>
+          <input type="number" id="itemCode" name="itemCode" placeholder="789xxxxxx789" required />
+
+          <label class="formItens" for="dueDate">Data de vencimento:</label>
+          <input type="date" id="dueDate" name="dueDate" placeholder="" required />
+
+          <label class="formItens" for="launchDay">Dia do lançamento:</label>
+          <input type="date" id="launchDay" name="launchDay" value="" />
+
+          <button  id="createNewitem" class="buttons" onclick="HandleCreate()">Salvar</button>
+        </fieldset>
+  
+    </div>
+    <div>
+      <a href="./itens.html"><button class="buttons">Ver itens</button></a>
+    </div>
+    <script src="main.js" defer></script>
+  </main>
+</body>
+
+</html>
