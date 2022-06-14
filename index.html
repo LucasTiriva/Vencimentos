@@ -15,7 +15,7 @@
 <body>
   <main>
     <div>
-      <form class="keyWord">
+      
         <fieldset>
           <legend>
             <h1>CONTROLE DE VENCIMENTOS</h1>
@@ -32,10 +32,9 @@
           <label class="formItens" for="launchDay">Dia do lançamento:</label>
           <input type="date" id="launchDay" name="launchDay" value="" />
 
-          <button class="buttons" onclick="item.save()">Salvar</button>
-          <button class="buttons" onclick="item.clear()">Limpar</button>
+          <button  id="createNewitem" class="buttons" onclick="HandleCreate()">Salvar</button>
         </fieldset>
-      </form>
+  
     </div>
     <div>
       <a href="./itens.html"><button class="buttons">Ver itens</button></a>

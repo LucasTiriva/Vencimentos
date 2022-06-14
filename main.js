@@ -1,28 +1,17 @@
+const itens = [];
 
-var produto = new produto();
+const HandleCreate = () => {
+    const itemName = document.getElementById("itemName").value
+    const itemCode = document.getElementById("itemCode").value
+    const dueDate = document.getElementById("dueDate").value
+    const launchDay = document.getElementById("launchDay").value
 
-class produto {
-    constructor() {
-        this.arrayProdutos = [];
-    }
-
-    save() {
-        let produto = this.lerDados();
-        console.log(produto);
-    }
-
-    lerDados() {
-        let produto = {        
-           produto.nomeProduto = document.getElementById("itemName").value;
-           produto.codigo = document.getElementById("itemCode").value;
-           produto.vencimento = document.getElementById("dueDate").value;
-           produto.lancamento = document.getElementById("launchDay").value;
-
-            return produto;
-        }
-    }
-
-    clear() {
-
-    }
+    itens.push({
+        itemName,
+        itemCode,
+        dueDate,
+        launchDay,
+    })
+    console.log(itens)
+    
 }
